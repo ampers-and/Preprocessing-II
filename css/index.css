@@ -171,7 +171,8 @@ img {
 nav {
   display: flex;
   justify-content: space-evenly;
-  width: 300px;
+  max-width: 500px;
+  width: 100%;
 }
 nav a {
   text-decoration: none;
@@ -195,9 +196,19 @@ nav a {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+  }
 }
 .home .content-section .img-content {
   width: 48%;
@@ -206,17 +217,39 @@ nav a {
 .home .content-section .img-content img {
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+  }
+}
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content .text-content {
+    width: 100%;
+  }
+}
 .home .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content .img-content {
+    width: 100%;
+    padding-bottom: 1%;
+  }
 }
 .home .content-destination {
   width: 75%;
@@ -225,15 +258,42 @@ nav a {
 .home .content-destination img {
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
+}
 .home .content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    display: block;
+    margin: 20px;
+    max-width: 400px;
+    width: 100%;
+    margin: 0;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 80%;
+    margin: 2% auto;
+  }
+}
+@media (max-width: 500px) {
+  .home {
+    display: block;
+    margin: 20px;
+    max-width: 400px;
+  }
 }
 header .top {
   border-bottom: 1px dashed black;
@@ -247,6 +307,11 @@ header .top .top-text {
   width: 100%;
   margin: 20px auto;
 }
+@media (max-width: 500px) {
+  header .top .top-text {
+    flex-direction: column;
+  }
+}
 header .title {
   max-width: 800px;
   margin: 0 auto;
@@ -255,6 +320,13 @@ header .title {
 }
 header .title .text-content {
   padding: 20px 0;
+}
+@media (max-width: 500px) {
+  header .title {
+    display: block;
+    margin: 20px;
+    max-width: 400px;
+  }
 }
 .btn {
   display: block;
