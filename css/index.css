@@ -338,3 +338,15 @@ header .title .text-content {
   background-color: teal;
   color: #fff;
 }
+@media (max-width: 500px) {
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 2em;
+    text-align: center;
+    background-color: darkturquoise;
+    color: white;
+  }
+}
