@@ -168,6 +168,16 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 300px;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -224,4 +234,25 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+header .top {
+  border-bottom: 1px dashed black;
+  width: 100%;
+}
+header .top .top-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  width: 100%;
+  margin: 20px auto;
+}
+header .title {
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+  border-bottom: 1px dashed black;
+}
+header .title .text-content {
+  padding: 20px 0;
 }
